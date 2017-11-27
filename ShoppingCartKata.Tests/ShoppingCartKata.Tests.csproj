@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GivenAnApple\WhenTheAppleIsScanned.cs" />
+    <Compile Include="GivenAShoppingCart\WhenItemIsScanned.cs" />
+    <Compile Include="GivenAShoppingCart\WhenMultipleItemsAreScanned.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShoppingCartKata\ShoppingCartKata.csproj">
+      <Project>{F5B89F01-7B87-498F-B105-B1098ED3C4D5}</Project>
+      <Name>ShoppingCartKata</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
